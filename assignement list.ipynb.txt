@@ -1,0 +1,60 @@
+github (version control system)
+
+- code storage 
+- team work (branching(wajahat/dev)  ---> main)
+- Conversioning 
+
+
+1= Local configuration setup
+-for setup > web credential > windows credential>
+-make sure gitbash is intalled
+-chose any folder where you want to create repo
+- create  folder name github-repo
+-go to the folder where you created folder and open git bash
+-run comannd > (git iniit (intialize emptey repositer in your folder ".git")
+
+make sure your user name and email configurationis setup localy
+- gitconfig --global user.name ""<github user name should be here">
+git config -- global user.name "<your email of github>"
+
+cheak karny k leye gitconfig --global user.nameor git config -- global user.name ye type krogey to name ajaiga
+
+-git conectivity with remote repo.
+ make an acount
+login to your github account
+click on + and new repositery
+fill open  table and give following
+	1=reposietery name
+	2= provide description
+	3=,make sure repo is public
+ after click oncreate repositery
+
+
+
+… >or create a new repository on the command line
+echo "# github-repo" >> README.md
+git init (initialize /reinitialize)
+git status(show all unrracked file)
+git add README.md or git add -A or git add . (to add file/files changes
+git commit -m "first commit" (commit those added files/file using git add comand)
+git branch -M main (rename the branch to "main" from "master"
+git remote add origin https://github.com/wajahat-mustafa/github-repo.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/wajahat-mustafa/github-repo.git
+git branch -M main
+git push -u origin main
+
+ye sub krny k bad bs phr apko dobara sy fgiile push krny k leye bs 
+status cheakkaro. agr new file banai hy to wo bataiga k UNTRACKED FILE
+phr type kro git add .(iska mtlb jitni b file hain apki wo sb update ho jaingi) or phr type kro git commit -m "firts commit" (ye first change ho sakt hy )
+git push type kr do to apki file push ho jaigi
+
+conflict resolving
+
+when remote is ahead of your local branch
+git pull
+
+>>>> merge conflict.(agr local file m update howa ho or main file m b update howa ho to kaisy update karingey.
+git stash (save your file temperory)
+git merge
